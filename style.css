@@ -1,0 +1,423 @@
+html,
+body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: featured-font;
+    src: url(/FredokaOne-Regular.ttf);
+}
+
+a,
+u {
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: small;
+}
+
+ul {
+    list-style-image: url("home.png");
+}
+
+.qwertyui {
+    height: 100%;
+    background-color: #2f71af;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+.sidebar {
+    position: absolute;
+    left: 2.8%;
+    top: 15%;
+    height: 80%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .material-icons {
+    margin-right: 5px;
+}
+
+#settings-etc {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+}
+
+.main-header {
+    font-size: 1.3rem;
+    position: absolute;
+    left: 3%;
+    top: 1.8%;
+}
+
+.catogry {
+    display: flex;
+    align-content: center;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(82, 86, 88);
+    background-color: #ffffff;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.line-border {
+    border: 0.5px solid rgb(148, 148, 148);
+}
+
+.catogry:nth-child(1) {
+    margin-top: 5px;
+}
+
+.catogry:hover {
+    background-color: #9e9e9e;
+}
+
+.main-container {
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 7.5%;
+    width: 95%;
+    height: 85%;
+    display: flex;
+    justify-content: start;
+}
+
+#SEP-CATO {
+    width: 100%;
+    border: 0.5px solid rgb(148, 148, 148);
+}
+
+.sep-side-content {
+    position: absolute;
+    left: 15.1%;
+    height: 99.65%;
+    border: 0.5px solid rgb(148, 148, 148);
+}
+
+.selected-page-on-sep {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    position: absolute;
+    left: 15%;
+    top: 17.5%;
+    background-color: #3a73dd;
+    width: 0.2%;
+    height: 3.7%;
+}
+
+.featured {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4%;
+    left: 17%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 60%;
+    height: 60%;
+    color: white;
+    overflow: hidden;
+    transition: transform .4s ease;
+}
+
+.featured:hover {
+    transform: scale(1.018);
+}
+
+#featured-info {
+    position: relative;
+    left: 55%;
+    top: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#featured-name {
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#featured-image {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#featured-desc {
+    word-wrap: break-word;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: small;
+}
+
+.rightside {
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 0.5%;
+    left: 79.2%;
+    width: 20.5%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sep-rightside-content {
+    position: absolute;
+    left: 78.7%;
+    height: 99.65%;
+    border: 0.5px solid rgb(148, 148, 148);
+}
+
+#s-and-u {
+    margin-top: 6px;
+    margin-left: 3px;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 7%;
+}
+
+.search-bar {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px balck solid;
+    border-radius: 15px;
+    background-color: #3f72cf;
+}
+
+.search-input {
+    position: relative;
+    left: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    background-color: #3f72cf;
+}
+
+#search-icon {
+    position: relative;
+    left: 5px;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+}
+
+#user-icon {
+    margin-left: 2px;
+    height: 100%;
+    border-radius: 50%
+}
+
+#user-icon:hover {
+    cursor: pointer;
+}
+
+#popular-thisweek {
+    font-size: small;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+#on-going {
+    font-weight: bold;
+    position: absolute;
+    top: 66%;
+    left: 17%;
+}
+
+.contain-play {
+    width: 92%;
+    height: 92%;
+    margin: 4%;
+    border-radius: 5.6%;
+    transition: transform .3s ease;
+    z-index: 1;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#on-going-1 {
+    background-image: url("dr.stone.jpg");
+    background-size: 100% 100%;
+}
+
+#on-going-2 {
+    background-image: url("jjs.jpg");
+    background-size: 100% 100%;
+}
+
+#on-going-3 {
+    background-image: url("hXh.jpg");
+    background-size: 100% 100%;
+}
+
+.play-button {
+    width: 40%;
+    height: 60%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    z-index: 2;
+    transition: transform .3s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.08);
+}
+
+.images-on-going:hover {
+    transform: scale(1.08);
+}
+
+.contain-play:hover {
+    transform: scale(1.05);
+}
+
+#on-going-image-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 72%;
+    left: 17%;
+    width: 60%;
+    height: 28%;
+}
+
+.div-shows-ongoing {
+    width: 25%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Show-name {
+    padding: 0px;
+    margin-top: 0px;
+    position: relative;
+    left: 4%;
+    font-size: small;
+    font-weight: bold;
+}
+
+#more {
+    position: absolute;
+    top: 66%;
+    left: 73%;
+    font-weight: bold;
+}
+
+.image-on-popular {
+    width: 40%;
+    height: 90%;
+    margin: 5px;
+    border-radius: 7%;
+}
+
+.popular-show-week {
+    display: flex;
+    flex-direction: row;
+    height: 22%;
+    width: 100%;
+}
+
+.material-icons.white {
+    color: white;
+}
+
+#popular-week {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.name-popular {
+    padding: 0;
+    margin: 0;
+    font-size: 85%;
+    font-weight: bold;
+    height: auto;
+    margin-top: 7%;
+}
+
+.stars5-rating {
+    width: 55%;
+    margin-top: 6%;
+}
+
+.catogery {
+    font-size: 70%;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    margin-right: 15px;
+}
+
+.popular-show-week-categoty-etc {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+}
+
+#watch-now {
+    width: 94px;
+    height: 30px;
+    color: white;
+    background-color: #3890ca;
+    border-radius: 5px;
+    margin-top: 5%;
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    transition: transform .3s ease;
+}
+
+#watch-now:hover {
+    transform: scale(1.05);
+}
+
+#watch-now:hover {
+    background-color: #2372b3;
+}
+
+#see-more {
+    width: 90%;
+    height: 30px;
+    color: white;
+    background-color: #3890ca;
+    border-radius: 5px;
+    margin-top: 3%;
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    transition: transform .3s ease;
+}
+
+#see-more:hover {
+    transform: scale(1.05);
+}
+
+#see-more:hover {
+    background-color: #2372b3;
+}
