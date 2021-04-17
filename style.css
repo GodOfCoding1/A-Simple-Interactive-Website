@@ -245,17 +245,17 @@ u {
 }
 
 #on-going-1 {
-    background-image: url("/images/dr.stone.jpg");
+    background-image: url("images/dr.stone.jpg");
     background-size: 100% 100%;
 }
 
 #on-going-2 {
-    background-image: url("/images/jjs.jpg");
+    background-image: url("images/jjs.jpg");
     background-size: 100% 100%;
 }
 
 #on-going-3 {
-    background-image: url("/images/hXh.jpg");
+    background-image: url("images/hXh.jpg");
     background-size: 100% 100%;
 }
 
