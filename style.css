@@ -3,21 +3,12 @@ body {
     height: 100%;
 }
 
-@font-face {
-    font-family: featured-font;
-    src: url(/FredokaOne-Regular.ttf);
-}
-
 a,
 u {
     overflow: hidden;
     white-space: nowrap;
     text-decoration: none;
     font-size: small;
-}
-
-ul {
-    list-style-image: url("home.png");
 }
 
 .qwertyui {
@@ -254,17 +245,17 @@ ul {
 }
 
 #on-going-1 {
-    background-image: url("dr.stone.jpg");
+    background-image: url("/images/dr.stone.jpg");
     background-size: 100% 100%;
 }
 
 #on-going-2 {
-    background-image: url("jjs.jpg");
+    background-image: url("/images/jjs.jpg");
     background-size: 100% 100%;
 }
 
 #on-going-3 {
-    background-image: url("hXh.jpg");
+    background-image: url("/images/hXh.jpg");
     background-size: 100% 100%;
 }
 
